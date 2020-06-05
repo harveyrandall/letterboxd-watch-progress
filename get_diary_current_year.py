@@ -24,7 +24,7 @@ for month in months:
     for entry in entries:
         cols = entry.contents[1::2]
         day = int(cols[1].find('a').text)
-        dt = datetime.datetime(year, month, day)
+        dt = datetime.date(year, month, day)
         film_name = cols[2].find('h3').find('a').text
         rating = float(cols[4].find('input', class_="rateit-field")['value'])/2
         liked = True if cols[5].find('span', class_='icon-liked') else False
