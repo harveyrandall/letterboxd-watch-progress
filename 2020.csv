@@ -61,16 +61,16 @@
 59,2020-04-29,Safety Not Guaranteed,3.5,False,False
 60,2020-04-30,Primer,3.5,False,False
 61,2020-04-30,Twelve Monkeys,4.0,False,False
-62,2020-05-01,Color Out of Space,4.5,True,False
-63,2020-05-01,Mandy,3.0,False,False
+62,2020-05-01,Mandy,3.0,False,False
+63,2020-05-01,Color Out of Space,4.5,True,False
 64,2020-05-02,Radioactive,3.0,False,False
 65,2020-05-02,Contagion,4.0,False,False
 66,2020-05-03,"Don't Worry, He Won't Get Far on Foot",4.0,False,False
-67,2020-05-03,Little Joe,2.5,False,False
-68,2020-05-03,Under the Silver Lake,4.5,True,False
+67,2020-05-03,Under the Silver Lake,4.5,True,False
+68,2020-05-03,Little Joe,2.5,False,False
 69,2020-05-04,Vivarium,1.5,False,False
-70,2020-05-05,What We Do in the Shadows,3.0,False,False
-71,2020-05-05,Bad Times at the El Royale,4.5,True,False
+70,2020-05-05,Bad Times at the El Royale,4.5,True,False
+71,2020-05-05,What We Do in the Shadows,3.0,False,False
 72,2020-05-06,Charlie Says,2.5,False,False
 73,2020-05-06,Doctor Sleep,4.0,False,False
 74,2020-05-07,Twister,3.5,False,True
@@ -108,3 +108,4 @@
 106,2020-06-02,Sanctum,3.0,False,False
 107,2020-06-03,Sinister,2.5,False,False
 108,2020-06-04,The Invitation,3.0,False,False
+109,2020-06-05,The Oxford Murders,3.5,False,False
