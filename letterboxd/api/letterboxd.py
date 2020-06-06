@@ -39,14 +39,22 @@ def get_diary():
     utils.save_diary(films, columns, "./data/diary.csv")
     return films
 
-def get_timeseries(day_of_year):
-    df = utils.load_diary('./data/diary.csv')
+def get_timeseries():
+    try:
+        df = utils.load_diary('./data/diary.csv')
+    except FileNotFoundError:
+        get_diary()
+        df = utils.load_diary('./data/diary.csv')
+    df['date']
     watched_dict = dict(df['date'].groupby(df['date']).count().cumsum())
+    today = datetime.date.today()
+    days_passed = (today - datetime.date(today.year, 1, 1)).days + 1
     curr = 0
-    for i in range(day_of_year):
+    for i in range(days_passed):
         d = (datetime.date(today.year, 1, 1) + datetime.timedelta(days=i)).isoformat()
         if watched_dict.get(d) is not None:
-            curr = watched_dict[d]
+            watched_dict[d] = int(watched_dict[d])
+            curr = int(watched_dict[d])
         else:
-            watched_dict[d] = curr
+            watched_dict[d] = int(curr)
     return watched_dict

@@ -12,11 +12,9 @@ def index():
 
 @app.route('/api/daily')
 def daily_count():
-    today = datetime.date.today()
-    days_passed = (today - datetime.date(today.year, 1, 1)).days + 1
-    data = letterboxd.get_timeseries(day_of_year)
+    data = letterboxd.get_timeseries()
     return {
-        'data': data
+        'diary': data
     }
 
 @app.route('/api/monthly')

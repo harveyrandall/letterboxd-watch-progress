@@ -1,5 +1,6 @@
 import numpy as np 
 import pandas as pd 
+import letterboxd
 
 def save_diary(entries, columns, path):
     df = pd.DataFrame(np.array(entries), columns=columns)
@@ -9,5 +10,5 @@ def save_diary(entries, columns, path):
         df.to_csv(f)
 
 def load_diary(path):
-    df = pd.read_csv('2020.csv', header=0)
+    df = pd.read_csv(path, header=0)
     return df
