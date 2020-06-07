@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "start-api": "cd api && venv/bin/flask run --no-debugger",
     "build": "react-scripts build",
+    "build-local": "react-scripts build && cp -r build/ /usr/local/var/www/Letterboxd_Build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
