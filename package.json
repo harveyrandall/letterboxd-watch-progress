@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "postinstall": "cd client && npm install"
+    },
+    "cacheDirectories": ["client/node_modules"]
+}
