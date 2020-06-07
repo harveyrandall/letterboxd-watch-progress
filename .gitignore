@@ -1,6 +1,7 @@
 venv/
 __pycache__/
 .vscode/
+WATCHED_BASICS/
 
 # dependencies
 /node_modules
