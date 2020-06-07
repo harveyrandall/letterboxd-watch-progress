@@ -1,68 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# letterboxd-watch-progress
 
-## Available Scripts
+My goal is to average watching one film a day for the entire year. The purpose of this small project is to track the progress of watched films for the current year to date. 
 
-In the project directory, you can run:
+Use React + Chart.js for the frontend and a Flask server to scrape my Letterboxd diary page to get my logged entries. Using this I plot a chart with two lines: an average line for watching one film a day, and a line for the number of films I have actually watched. 
 
-### `npm start`
+Above the chart are three status boxes stating:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. The current day of the year
+2. The number of films I have watched so far
+3. Whether I'm ahead or behind and by how much
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I use a cronjob to fetch my diary entries at 5am every morning, the cronjob is not included within this repository but can easily be added using `crontab -e` on Mac/Linux with the following line `00 05 * * * <python_path> <path_to_project>/letterbox/api/letterboxd.py`.
 
-### `npm test`
+## Personalising the data
+In `letterboxd/api/letterboxd.py` change the value of `username` to your Letterboxd username.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Running the app
+First build the React project using `yarn build`. Then start the Flask api with `yarn run start-api` and run the React app with `serve -s build`. To view the project navigate to `localhost:3000` or whichever URL the `serve` tells you the app is available at.
