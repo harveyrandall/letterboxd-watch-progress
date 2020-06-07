@@ -58,3 +58,6 @@ def get_timeseries():
         else:
             watched_dict[d] = int(curr)
     return watched_dict
+
+if __name__ == "__main__":
+    get_diary()
