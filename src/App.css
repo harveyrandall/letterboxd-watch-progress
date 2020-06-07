@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background: #14181C;
+  color: rgb(153, 170, 187);
+}
+
+.App {
+  margin: 20px 0px;
+}
+
+.status-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height:100px;
+}
+.status-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202830;
+  border: 1px solid #456;
+  color: #ffffff;
+  padding: 5px 30px;
+}
+.status-box p {
+  margin-bottom: 0.3em;
+  font-variant: small-caps;
+}
+.status-box h2 {
+  font-weight: bold;
+  margin:0px;
+}
+.positive {
+  color: #48ae02;
+}
+.negative {
+  color:#FF5C74;
+}
+
+#watched {
+  background: white;
+}
