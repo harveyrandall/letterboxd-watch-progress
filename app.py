@@ -1,12 +1,8 @@
 from flask import Flask, Response
-from apscheduler.schedulers.background import BackgroundScheduler
 import letterboxd
+import clock 
 
 app = Flask(__name__, static_folder='./client/build', static_url_path='/')
-
-scheduler = BackgroundScheduler()
-job = scheduler.add_job(letterboxd.get_diary, 'cron', hour=5, minute=0)
-scheduler.start()
 
 @app.route('/')
 def index():
