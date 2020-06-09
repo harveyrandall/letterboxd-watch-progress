@@ -5,7 +5,7 @@ import letterboxd
 
 scheduler = BlockingScheduler()
 
-@scheduler('cron', hour=5)
+@scheduler.scheduled_job('cron', hour=5)
 def update_diary():
     letterboxd.get_diary()
 
