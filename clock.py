@@ -6,6 +6,6 @@ from utils import cronjob
 
 scheduler = BlockingScheduler()
 scheduler.add_job(get_diary, 'cron', day="*", hour=5)
-scheduler.add_job(cronjob, "cron", second="*")
+scheduler.add_job(cronjob, "interval", seconds=10)
 
 scheduler.start()
