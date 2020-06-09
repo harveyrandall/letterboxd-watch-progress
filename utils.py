@@ -1,6 +1,7 @@
 import numpy as np 
 import pandas as pd 
 import letterboxd
+import datetime
 
 def save_diary(entries, columns, path):
     df = pd.DataFrame(np.array(entries), columns=columns)
@@ -12,3 +13,7 @@ def save_diary(entries, columns, path):
 def load_diary(path):
     df = pd.read_csv(path, header=0)
     return df
+
+def cronjob():
+    print("Cronjob running")
+    print("Tick! The time is: %s" % datetime.now())
