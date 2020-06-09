@@ -1,6 +1,5 @@
 from flask import Flask, Response
 import letterboxd
-import clock
 
 app = Flask(__name__, static_folder='./client/build', static_url_path='/')
 
