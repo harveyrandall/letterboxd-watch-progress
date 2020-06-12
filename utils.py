@@ -13,6 +13,3 @@ def save_diary(entries, columns, path):
 def load_diary(path):
     df = pd.read_csv(path, header=0)
     return df
-
-def cronjob():
-    print("The time is: %s" % datetime.datetime.now())
