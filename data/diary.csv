@@ -20,54 +20,54 @@
 18,2020-03-03,At Eternity's Gate,4.0,False,False
 19,2020-03-07,Maniac,3.0,False,False
 20,2020-03-08,I Don't Feel at Home in This World Anymore,4.0,False,False
-21,2020-03-13,Portrait of a Lady on Fire,5.0,True,False
-22,2020-03-13,The Ritual,2.5,False,False
+21,2020-03-13,The Ritual,2.5,False,False
+22,2020-03-13,Portrait of a Lady on Fire,5.0,True,False
 23,2020-03-14,Hereditary,3.0,False,False
 24,2020-03-14,Midsommar,4.5,True,True
-25,2020-03-15,Guns Akimbo,2.5,False,False
-26,2020-03-15,The Witch,3.5,False,False
+25,2020-03-15,The Witch,3.5,False,False
+26,2020-03-15,Guns Akimbo,2.5,False,False
 27,2020-03-16,All the Bright Places,3.5,False,False
-28,2020-03-19,Ocean's Twelve,4.0,True,True
-29,2020-03-19,Skyscraper,2.5,False,False
-30,2020-03-19,Girl on the Third Floor,2.0,False,False
+28,2020-03-19,Girl on the Third Floor,2.0,False,False
+29,2020-03-19,Ocean's Twelve,4.0,True,True
+30,2020-03-19,Skyscraper,2.5,False,False
 31,2020-03-21,To the Bone,3.5,False,False
 32,2020-03-22,I Am the Pretty Thing That Lives in the House,1.0,False,False
-33,2020-03-23,In the Shadow of the Moon,3.5,False,False
-34,2020-03-23,The Platform,3.5,False,False
+33,2020-03-23,The Platform,3.5,False,False
+34,2020-03-23,In the Shadow of the Moon,3.5,False,False
 35,2020-03-24,What Keeps You Alive,1.0,False,False
 36,2020-03-27,Wounds,2.5,False,False
 37,2020-03-27,The Miseducation of Cameron Post,4.5,True,False
 38,2020-03-27,Truth or Dare,3.5,False,False
 39,2020-03-28,Advantageous,2.0,False,False
-40,2020-03-29,Margarita with a Straw,3.0,False,False
-41,2020-03-29,mother!,2.5,False,False
+40,2020-03-29,mother!,2.5,False,False
+41,2020-03-29,Margarita with a Straw,3.0,False,False
 42,2020-03-30,Wild,4.0,False,False
 43,2020-04-04,OtherLife,2.5,False,False
-44,2020-04-05,I Origins,3.0,False,False
-45,2020-04-05,Inferno,4.0,False,False
+44,2020-04-05,Inferno,4.0,False,False
+45,2020-04-05,I Origins,3.0,False,False
 46,2020-04-15,Kill Bill: Vol. 1,4.5,False,False
 47,2020-04-16,The Discovery,3.0,False,False
-48,2020-04-18,Over the Hedge,4.0,False,False
-49,2020-04-18,Harry Potter and the Philosopher's Stone,5.0,False,True
+48,2020-04-18,Harry Potter and the Philosopher's Stone,5.0,False,True
+49,2020-04-18,Over the Hedge,4.0,False,False
 50,2020-04-22,Wonder,4.0,False,False
-51,2020-04-25,The Shawshank Redemption,5.0,False,True
-52,2020-04-25,The Lion King,2.0,False,False
+51,2020-04-25,The Lion King,2.0,False,False
+52,2020-04-25,The Shawshank Redemption,5.0,False,True
 53,2020-04-26,mid90s,4.0,False,False
-54,2020-04-27,Nothing Really Happens,2.0,False,False
-55,2020-04-27,Time Trap,3.5,False,False
+54,2020-04-27,Time Trap,3.5,False,False
+55,2020-04-27,Nothing Really Happens,2.0,False,False
 56,2020-04-28,41,3.0,False,False
 57,2020-04-29,A Promise of Time Travel,2.0,False,False
 58,2020-04-29,Einstein's God Model,1.5,False,False
 59,2020-04-29,Safety Not Guaranteed,3.5,False,False
 60,2020-04-30,Primer,3.5,False,False
 61,2020-04-30,Twelve Monkeys,4.0,False,False
-62,2020-05-01,Mandy,3.0,False,False
-63,2020-05-01,Color Out of Space,4.5,True,False
+62,2020-05-01,Color Out of Space,4.5,True,False
+63,2020-05-01,Mandy,3.0,False,False
 64,2020-05-02,Radioactive,3.0,False,False
 65,2020-05-02,Contagion,4.0,False,False
-66,2020-05-03,"Don't Worry, He Won't Get Far on Foot",4.0,False,False
-67,2020-05-03,Little Joe,2.5,False,False
-68,2020-05-03,Under the Silver Lake,4.5,True,False
+66,2020-05-03,Little Joe,2.5,False,False
+67,2020-05-03,Under the Silver Lake,4.5,True,False
+68,2020-05-03,"Don't Worry, He Won't Get Far on Foot",4.0,False,False
 69,2020-05-04,Vivarium,1.5,False,False
 70,2020-05-05,Bad Times at the El Royale,4.5,True,False
 71,2020-05-05,What We Do in the Shadows,3.0,False,False
@@ -108,10 +108,18 @@
 106,2020-06-02,Sanctum,3.0,False,False
 107,2020-06-03,Sinister,2.5,False,False
 108,2020-06-04,The Invitation,3.0,False,False
-109,2020-06-05,13th,5.0,False,False
+109,2020-06-05,The Oxford Murders,3.5,False,False
 110,2020-06-05,Await Further Instructions,3.5,False,False
-111,2020-06-05,The Oxford Murders,3.5,False,False
-112,2020-06-06,Ocean's Thirteen,5.0,True,True
-113,2020-06-06,You've Got Mail,3.5,False,False
+111,2020-06-05,13th,5.0,False,False
+112,2020-06-06,You've Got Mail,3.5,False,False
+113,2020-06-06,Ocean's Thirteen,5.0,True,True
 114,2020-06-07,The Social Network,5.0,True,True
 115,2020-06-08,Would You Rather,3.5,False,False
+116,2020-06-09,The Perfection,1.0,False,False
+117,2020-06-09,"Happy Birthday, Marsha!",4.0,False,False
+118,2020-06-09,The First Purge,3.0,False,False
+119,2020-06-10,Harry Potter and the Prisoner of Azkaban,5.0,False,False
+120,2020-06-10,The Vast of Night,2.0,False,False
+121,2020-06-11,Your Name.,5.0,True,False
+122,2020-06-12,Blue Ruin,3.5,False,False
+123,2020-06-12,Duck Butter,3.0,False,False
