@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch('/api/daily').then(res => res.json()).then(data => {
+    fetch('/api/daily', {cache: "no-store"}).then(res => res.json()).then(data => {
       setData(data.diary);
       let total = Object.values(data.diary).reduce((a,b) => {
         return Math.max(a,b);
@@ -27,7 +27,7 @@ function App() {
         progress={dayDiff}
         watched={totalWatched}
       />
-      <LineChart dayOfYear={currentDay} data={data} />
+      <LineChart data={data} />
     </div>
   );
 }
