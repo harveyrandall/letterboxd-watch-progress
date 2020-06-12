@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import utils
 
 DIARY_LOCATION = os.path.join(
-    os.path.dirname(os.path.realpath(__file__), "data", "diary.csv")
+    os.path.dirname(os.path.realpath(__file__)), "data", "diary.csv")
 )
 
 def get_diary():
