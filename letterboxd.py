@@ -1,10 +1,14 @@
 import requests
 import datetime
+import os
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
-
 import utils
+
+DIARY_LOCATION = os.path.join(
+    os.path.dirname(os.path.realpath(__file__), "data", "diary.csv")
+)
 
 def get_diary():
     username = "harveyrandall"
@@ -36,15 +40,15 @@ def get_diary():
             liked = True if cols[5].find('span', class_='icon-liked') else False
             rewatch = not ("icon-status-off" in cols[6]['class'])
             films.append([dt, film_name, rating, liked, rewatch])
-    utils.save_diary(films, columns, "./data/diary.csv")
+    utils.save_diary(films, columns, DIARY_LOCATION)
     return films
 
 def get_timeseries():
     try:
-        df = utils.load_diary('./data/diary.csv')
+        df = utils.load_diary(DIARY_LOCATION)
     except FileNotFoundError:
         get_diary()
-        df = utils.load_diary('./data/diary.csv')
+        df = utils.load_diary(DIARY_LOCATION)
     df['date']
     watched_dict = dict(df['date'].groupby(df['date']).count().cumsum())
     today = datetime.date.today()
