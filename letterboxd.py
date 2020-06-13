@@ -41,6 +41,7 @@ def get_diary():
             rewatch = not ("icon-status-off" in cols[6]['class'])
             films.append([dt, film_name, rating, liked, rewatch])
     utils.save_diary(films, columns, DIARY_LOCATION)
+    print("Retrieved updated diary at {}".format(datetime.datetime.now()))
     return films
 
 def get_timeseries():
