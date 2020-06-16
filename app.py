@@ -5,7 +5,7 @@ import letterboxd
 app = Flask(__name__, static_folder='./client/build', static_url_path='/')
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(letterboxd.get_diary, 'interval', minutes=1)
+scheduler.add_job(letterboxd.get_diary, 'interval', hours=1)
 scheduler.start()
 
 @app.route('/')
