@@ -9,8 +9,12 @@ function App() {
   const [totalWatched, setTotalWatched] = useState(0);
   const [data, setData] = useState({});
 
+  let reqHeaders = new Headers();
+  reqHeaders.append('pragma', 'no-cache');
+  reqHeaders.append('cache-control', 'no-cache');
+
   useEffect(() => {
-    fetch('/api/daily', {cache: "no-store"}).then(res => res.json()).then(data => {
+    fetch('/api/daily', reqHeaders).then(res => res.json()).then(data => {
       setData(data.diary);
       let total = Object.values(data.diary).reduce((a,b) => {
         return Math.max(a,b);

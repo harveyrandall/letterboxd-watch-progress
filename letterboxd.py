@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import requests
 import datetime
 import os

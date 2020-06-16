@@ -15,5 +15,8 @@ I use a cronjob to fetch my diary entries at 5am every morning, the cronjob is n
 ## Personalising the data
 In `letterboxd/api/letterboxd.py` change the value of `username` to your Letterboxd username.
 
+# TODO: Update and correct below
+https://saqibameen.com/deploy-python-cron-job-scripts-on-heroku/ as reference for for adding `clock` to `Procfile` using `heroku ps:scale clock=1`.
+
 ## Running the app
 First build the React project using `yarn build`. Then start the Flask api with `yarn run start-api` and run the React app with `serve -s build`. To view the project navigate to `localhost:3000` or whichever URL the `serve` tells you the app is available at.
